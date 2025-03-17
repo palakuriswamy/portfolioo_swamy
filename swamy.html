@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Swamy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #041526;
+            color: #ffffff;
+        }
+
+        /* Navbar with static bar on top */
+        .navbar {
+            background-color: #041526;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            font-weight: bold;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ded8d8;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: #041526;
+        }
+
+        /* Hero Section */
+        .hero-sectionn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 60vh;
+            padding: 100px 10% 50px;
+            background: #0d394B;
+            margin-top: 70px;
+        }
+
+        .hero-contentt {
+            max-width: 60%;
+            margin-right: 5%;
+        }
+
+        .hero-contentt h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .hero-contentt h1 span {
+            color: #f0eaed;
+        }
+
+        .hero-contentt p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .profile-img {
+            width: 320px;  
+            height: 320px;
+            border-radius: 50%;
+            border: 1px solid #cac1c5;
+            object-fit: cover;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 10%;
+            background-color: #ffffff;
+            color: #041526;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (Fixed at the top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section  id="about"  class="hero-sectionn">
+        <div class="hero-contentt">
+            <h1>Hi, I am <span>Swamy</span></h1>
+            <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
+        </div>
+        <div>
+            <img src="swamyy.jpg" alt="Swamy's Photo" class="profile-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Bar</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex; /* Display bars side by side */
+            justify-content: space-between; /* Space between bars */
+            margin-top: 40px;
+        }
+
+        .skill-bar {
+            width: 15cm; /* Width of the bar */
+            height: auto; /* Flexible height for content */
+            background-color: #243638; /* Bar color */
+            color: rgb(255, 255, 255); /* Text color */
+            display: flex; /* Using flexbox for alignment */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Align items at the top */
+            font-size: 20px; /* Smaller text size */
+            border-radius: 15px; /* Increased border-radius for rounder corners */
+            padding: 15px;
+            margin: 10px;
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Hover effect for skill bars */
+        .skill-bar:hover {
+            background-color: #298171; /* Darken the background color on hover */
+            transform: scale(1.05); /* Slightly increase the size */
+        }
+
+        .title {
+            font-size: 24px; /* Title font size */
+            font-weight: bold; /* Bold title */
+            margin-bottom: 20px; /* Space between title and content */
+        }
+
+        .language-row, .topic-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* Make the row span the full width */
+            margin-bottom: 10px;
+        }
+
+        .programming-language, .topic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white; /* Border for each box */
+            padding: 12px; /* Padding for content inside the box */
+            width: 30%; /* Equal width for each box */
+            border-radius: 20px; /* Rounded corners */
+            font-size: 14px; /* Smaller font size */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Hover effect for individual skill boxes */
+        .programming-language:hover, .topic:hover {
+            background-color: #fff; /* Change background color on hover */
+            color: #4CAF50; /* Change text color */
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.6); /* Glow effect */
+        }
+
+        .programming-language i, .topic i {
+            margin-right: 8px; /* Space between icon and text */
+            font-size: 20px; /* Icon size */
+            transition: transform 0.3s ease; /* Smooth transition for icon */
+        }
+
+        /* Hover effect for icons inside boxes */
+        .programming-language:hover i, .topic:hover i {
+            transform: rotate(10deg); /* Slight rotation effect */
+            color: #4CAF50; /* Icon color change on hover */
+        }
+
+        .programming-language span, .topic span {
+            font-size: 14px; /* Text size */
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- Skills Section -->
+<section id="skills" style="margin-top: 50px; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 20px; color: #fff;">Skills</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 40px;color: #fff">Here are some of my skills, which I learned in my Undergraduation.</p>
+    <!-- Include the skill bars -->
+    <div class="container">
+        <!-- First bar with programming languages -->
+        <div class="skill-bar">
+            <div class="title">Programming Languages</div>
+            <div class="language-row">
+                <div class="programming-language">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="programming-language">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="programming-language">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </div>
+            </div>
+            <div class="language-row">
+                <div class="programming-language">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="programming-language">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="programming-language">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="language-row">
+                <div class="programming-language">
+                    <i class="fab fa-r-project"></i>
+                    <span>R Programming</span>
+                </div>
+                <div class="programming-language">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="programming-language">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+            </div>
+        </div>
+        
+
+        <!-- Second bar with topics -->
+        <div class="skill-bar">
+            <div class="title">Core Topics</div>
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fas fa-cogs"></i>
+                    <span>DSA</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Computer Networks</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-desktop"></i>
+                    <span>Operating Systems</span>
+                </div>
+            </div>
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fas fa-robot"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-brain"></i>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloud Computing</span>
+                </div>
+            </div>
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fas fa-database"></i>
+                    <span>DBMS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third bar with advanced tools -->
+        <div class="skill-bar">
+            <div class="title">Advanced Tools</div>
+            
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Visualization</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Tableau</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Power BI</span>
+                </div>
+            </div>
+        
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fas fa-brain"></i>
+                    <span>TensorFlow</span>
+                </div>
+                <div class="topic">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel</span>
+                </div>
+            </div>
+        
+            <div class="topic-row">
+                <div class="topic">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Kubernetes</span>
+                </div>
+                <div class="topic">
+                    <i class="fas fa-chart-area"></i>
+                    <span>Statistics</span>
+                </div>
+            </div>
+        </div>
+        
+</section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container to hold project boxes */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers the boxes */
+            gap: 30px; /* Space between the boxes */
+            margin-top: 40px;
+        }
+
+        /* Style for individual project box with 10cm x 10cm size */
+        .project-box {
+            width: 10cm;  /* Width 10cm */
+            height: 10cm; /* Height 10cm */
+            background-color: #0d253c;
+            color: #8ba12c;
+            border-radius: 12px; /* Rounded corners */
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out; /* Animation effect on hover */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-box:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Title of the section */
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Subtitle below the section title */
+        .section-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Icon and text inside each project box */
+        .project-box i {
+            font-size: 40px; /* Icon size */
+            margin-bottom: 10px;
+        }
+
+        .project-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .project-box p {
+            font-size: 0.9rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* Skills Box - Three small skill boxes in each row */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Style for individual skill box */
+        .skills-box {
+            background-color: #132c47;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px; /* Slightly bigger font size */
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skills-box:hover {
+            background-color: #3e437a;
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        /* Style for "View Code" button inside project box */
+        .view-code {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .view-code:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Projects Section -->
+    <section id="projects" style="margin-top: 50px;">
+        <h2 style="font-size: 2rem; margin-left: 700px; color: #fff;">Projects</h2>
+        <p style="font-size: 1.2rem; margin-left: 320px;color: #fff">I have worked on a wide range of projects. From web apps to ML applications. Here are some of my projects.</p>
+        
+        <!-- Projects container holding all project boxes -->
+        <div class="projects-container">
+            <!-- First Row of Project Boxes -->
+            <div class="project-box">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Warehouse Management System Web Application</h3>
+                <p>Led end-to-end development of a Warehouse Management System web app, integrating frontend and backend (PHP) with SQL database for inventory tracking and order processing.</p>
+                <!-- Skills for this project -->
+                <div class="skills-container">
+                    <div class="skills-box">PHP</div>
+                    <div class="skills-box">SQL</div>
+                    <div class="skills-box">Web Development</div>
+                    <div class="skills-box">HTML</div>
+                    <div class="skills-box">CSS</div>
+                </div>
+                <a href="https://github.com/palakuriswamy/Warehouse-mangement-project" class="view-code" target="_blank">View Code</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Laptop Price Prediction Machine Learning Model</h3>
+                <p>Developed a Machine Learning Model for efficiently predicting laptop price with a given set of features, integrated it with the frontend using Flask API.</p>
+                <!-- Skills for this project -->
+                <div class="skills-container">
+                    <div class="skills-box">Python</div>
+                    <div class="skills-box">Flask</div>
+                    <div class="skills-box">Machine Learning</div>
+                    <div class="skills-box">Data Cleaning</div>
+                    <div class="skills-box">Data Processing</div>
+                    <div class="skills-box">Data Training</div>
+                </div>
+                <a href="https://github.com/palakuriswamy/machine-learning-model-project" class="view-code" target="_blank">View Code</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>A Vision for The Better Health 6 in 1 Diseases Detection</h3>
+                <p>Detect six common diseases from medical data, enhancing diagnostic accuracy. This integrative approach aims to revolutionize detection and personalized treatment strategies in healthcare.</p>
+                <!-- Skills for this project -->
+                <div class="skills-container">
+                    <div class="skills-box">Python</div>
+                    <div class="skills-box">Deep Learning</div>
+                    <div class="skills-box">Machine Learning</div>
+                    <div class="skills-box">Healthcare</div>
+                    <div class="skills-box">TensorFlow</div>
+                    <div class="skills-box">Image Processing</div>
+                </div>
+                <a href="https://github.com/palakuriswamy/6-in-1-medical-projectt" class="view-code" target="_blank">View Code</a>
+            </div>
+        </div>
+        <div class="projects-container">
+            <!-- Second Row of Project Boxes -->
+            <div class="project-box">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Bank Loan Analysis using Power BI and MS SQL Server</h3>
+                <p>Analyzed bank loan data to identify key factors influencing loan approval, leveraging Power BI for data visualization and MS SQL Server for data handling.</p>
+                <!-- Skills for this project -->
+                <div class="skills-container">
+                    <div class="skills-box">Power BI</div>
+                    <div class="skills-box">SQL Server</div>
+                    <div class="skills-box">Data Analysis</div>
+                    <div class="skills-box">Data Modeling</div>
+                    <div class="skills-box">DAX</div>
+                    <div class="skills-box">Data Visualization</div>
+                </div>
+                <a href="https://github.com/palakuriswamy/PowerBI-Project" class="view-code" target="_blank">View Code</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-robot"></i>
+                <h3>ML-based Image Classification</h3>
+                <p>Developed an ML-based image classification model to categorize images using Convolutional Neural Networks (CNN) with TensorFlow and Keras.</p>
+                <!-- Skills for this project -->
+                <div class="skills-container">
+                    <div class="skills-box">Python</div>
+                    <div class="skills-box">TensorFlow</div>
+                    <div class="skills-box">Keras</div>
+                    <div class="skills-box">Image Classification</div>
+                    <div class="skills-box">Deep Learning</div>
+                    <div class="skills-box">CNNs</div>
+                </div>
+                <a href="https://github.com/palakuriswamy/SDE_intenship" class="view-code" target="_blank">View Code</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for better readability */
+        }
+
+        /* Experience Section */
+        .experience-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #041526; /* Dark background for the section */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .experience-box {
+            padding: 20px;
+            background-color: #0c243c; /* Slightly lighter dark background */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: #fff; /* White text inside the box */
+            position: relative;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        /* Blink Up Effect */
+        .experience-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.3);
+            animation: blinkUp 0.4s ease-in-out;
+        }
+
+        @keyframes blinkUp {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(-5px); }
+        }
+
+        .experience-box h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .experience-box p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #ddd; /* Lighter text for paragraph */
+        }
+
+        .experience-box ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .experience-box ul li {
+            font-size: 1rem;
+            color: #bbb; /* Slightly lighter color for list items */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="experience" class="experience-container">
+        <h2 class="experience-title">Internship Experience</h2>
+
+        <div class="experience-box">
+            <h3>Software Developer Intern & Research Work on Power BI</h3>
+            <p><strong>Location:</strong> IIIT-Hyderabad, Gachibowli, Hyderabad, Telangana, India, 500032</p>
+            <p><strong>Duration:</strong> January 2024 - June 2024</p>
+            <p><strong>Key Responsibilities:</strong></p>
+            <ul>
+                <li>Developed ERP Applications for IMS at IIIT-H using PHP, JavaScript, HTML, and CSS.</li>
+                <li>Collaborated with cross-functional teams for seamless integration and analysis of databases.</li>
+                <li>Conducted research on Power BI, focusing on advanced data visualization techniques and creating interactive dashboards for business intelligence.</li>
+                <li>Worked with large datasets and implemented data transformations in Power BI to enhance reporting and analytics.</li>
+            </ul>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <section id="education">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 40px; /* Add space between Education heading and boxes */
+        }
+
+        .edu-container {
+            display: flex;
+            justify-content: space-between; /* Align all boxes in a single row */
+            gap: 10px; /* Small gap between boxes */
+            flex-wrap: nowrap; /* Prevent wrapping of boxes to the next line */
+        }
+
+        .edu-box {
+            background-color: #091a2b;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            width: 9cm; /* Set the width to 9cm */
+            height: 8cm; /* Set the height to 9cm */
+            text-align: left;
+            overflow: hidden; /* Prevent overflow if text is too long */
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Enlarge and shadow transition */
+        }
+
+        /* Enlarge Effect on Hover */
+        .edu-box:hover {
+            transform: scale(1.1); /* Increase size */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+        }
+
+        .edu-box h3 {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        .edu-box p {
+            font-size: 0.9rem;
+            margin: 3px 0;
+        }
+
+        .edu-box .score {
+            font-size: 1.1rem;
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        .edu-box .details {
+            margin-left: 15px;
+        }
+
+        .edu-box .institution,
+        .edu-box .year,
+        .edu-box .score {
+            margin-bottom: 5px;
+        }
+
+        .edu-box .description {
+            font-size: 0.9rem;
+            color: #ebeceb;
+            font-style:  normal;
+        }
+
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <h2><b>Education</b></h2>
+    </div>
+</br>
+</br>
+    <div class="edu-container">
+        <!-- B-Tech - TKR College -->
+        <div class="edu-box">
+            <div class="details">
+                <h3>B-Tech in Computer Science (Data Science)</h3>
+                <p class="institution">TKR College of Engineering and Technology</p>
+                <p class="year">Year of Passing: 2024</p>
+                <p class="score">Score: 8.61 GPA</p>
+                <p class="description">         I graduated with a Bachelor's degree in Computer Science and Engineering (Data Science) at TKR College of Engineering and Technology. I have completed 8 semesters with a CGPA of 8.61. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, DBMS, Big Data, OS, DL, Data Mining, and CN, among others.</p>
+            </div>
+        </div>
+
+        <!-- Intermediate - Geetanjali Junior College -->
+        <div class="edu-box">
+            <div class="details">
+                <h3>Intermediate (MPC)</h3>
+                <p class="institution">Geetanjali Junior College, Nalgonda</p>
+                <p class="year">Year of Passing: 2020</p>
+                <p class="score">Score: 965 Marks</p>
+                <p class="description">I completed my class 12 education at Geetanjali Junior College, Nalgonda, where I studied MPC (Mathematics, Physics, and Chemistry). I scored 965 marks and achieved a rank of 14K in TSEAMCET. I also secured 87.86% in JEE MAINS.</p>
+            </div>
+        </div>
+
+        <!-- SSC - Gandhiji English Medium School -->
+        <div class="edu-box">
+            <div class="details">
+                <h3>SSC (10th Class)</h3>
+                <p class="institution"></B>Gandhiji English Medium School, Chandur</B></p>
+                <p class="year">Year of Passing: 2018</p>
+                <p class="score">Score: 9.5 GPA</p>
+                <p class="description">I completed my class 10 education at Gandhiji English Medium School, Chandur, where I followed the syllabus of the Telangana State Board of Secondary Education. I secured a GPA of 9.5.</p>
+            </div>
+        </div>
+
+        <!-- Metch - Additional Box -->
+        <!-- <div class="edu-box">
+            <div class="details">
+                <h3><b>Metch</b></h3>
+
+                <p class="institution"><B>JNTU-HYDERABAD</B></p>
+                <p class="year">Year of Passing: 2026</p>
+                <p class="score">Score: </p>
+                <p class="description">Iam currently pursuing an M.Tech in Computer Science at JNTU Hyderabad (2024 - present) with a focus on Data Science, aiming to advance your expertise in software development and AI/ML.</p>
+            </div>
+        </div> -->
+
+    </div>
+
+</body>
+</html></br></br></br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <section id="certifications"></section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #9c1c1c;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .cert-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: nowrap;
+        }
+
+        .cert-box {
+            background-color: #09243f;
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            width: 7.5cm;
+            height: 5.5cm;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            font-size: 0.8rem;
+        }
+
+        .cert-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 10px;
+        }
+
+        .skill-box {
+            background-color: #12d6af;
+            color: rgb(16, 16, 16);
+            padding: 5px;
+            border-radius: 7px;
+            font-size: 0.8rem;
+            transition: transform 0.3s ease-in-out;
+            width: 75px;
+            height: 53PX;
+            text-align: center;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.2);
+        }
+
+        .cert-box .btn {
+            background-color: #140c2d;
+            color: rgb(188, 182, 198);
+            padding: 6px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+        .cert-box .btn:hover {
+            background-color: #190227;
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <h2><b>Certifications</b></h2>
+    </div>
+</BR>
+</BR>
+    
+    
+    <div class="cert-container">
+        <div class="cert-box">
+            <h5>Data Science for Engineers (NPTEL, IIT Madras)</h5>
+            <div class="skills-container">
+                <div class="skill-box">R Programming</div>
+                <div class="skill-box">Statistics</div>
+                <div class="skill-box">visualization</div>
+            </div>
+            <a class="btn" href="https://drive.google.com/file/d/1s0haBUOgWRXqTaIJcpQL5LJioVCrao8G/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="cert-box">
+            <h5>AI/ML 50 Weeks Course (IIIT Hyderabad-OFFLINE)</h5>
+            <div class="skills-container">
+                <div class="skill-box">Deep Learning</div>
+                <div class="skill-box">Python</div>
+                <div class="skill-box">AI/ML</div>
+            </div>
+            <a class="btn" href="https://drive.google.com/file/d/1hf4soXMxPz1siwq_F_Arl7Cc4_DjYg3f/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="cert-box">
+            <h5>Educate NXT 80 Hours Campus Training</h5>
+            <div class="skills-container">
+                <div class="skill-box">Software Development</div>
+                <div class="skill-box">Cloud Computing</div>
+                <div class="skill-box">Web Technologies</div>
+            </div>
+            <a class="btn" href="https://drive.google.com/file/d/1R7crX4IpCvJT4935Bt_oIYdNfz6FVwUR/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="cert-box">
+            <h5>HTML, Java, Python, CSS Bootcamp Certification</h5>
+            <div class="skills-container">
+                <div class="skill-box">Web Development</div>
+                <div class="skill-box">Frontend</div>
+                <div class="skill-box">Backend</div>
+            </div>
+            <a class="btn" href="bootcamp_cert.jpg" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="cert-box">
+            <h5>Runner-Up in Edu. NXT Hackathon (Machine Learning)</h5>
+            <div class="skills-container">
+                <div class="skill-box">Model Optimization</div>
+                <div class="skill-box">Data Science</div>
+                <div class="skill-box">Problem Solving</div>
+            </div>
+            <a class="btn" href="https://drive.google.com/file/d/1R7crX4IpCvJT4935Bt_oIYdNfz6FVwUR/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+    </div>
+    
+</body>
+</html>
+</BR></BR>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <section id="contactme"></section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #041526;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hdr {
+            color: #e4e7e9;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .box {
+            background-color: #041526;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        .ttl {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .inf {
+            font-size: 1.1rem;
+            display: inline-block;
+            margin: 5px 15px;
+        }
+
+        .ico {
+            margin-top: 15px;
+        }
+
+        .ico a {
+            margin: 0 10px;
+            color: #ffffff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .ico a:hover {
+            color: #1abc9c;
+        }
+
+        .ftr {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: #18b4df;
+        }
+
+        @media (max-width: 600px) {
+            .inf {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="hdr">Contact Me</h1>
+
+    <div class="box">
+        <h3 class="ttl">Contact Details</h3>
+        <div class="inf">📛 Swamy Palakuri</div> |
+        <div class="inf">📩 swamypalakuri6@gmail.com</div> |
+        <div class="inf">📍 Hyderabad</div> |
+        <div class="inf">📞 +91 8309867775</div>
+
+        <div class="ico">
+            <a href="https://wa.me/918309867775" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:swamypalakuri6@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+918309867775"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </div>
+
+    <footer class="ftr">© 2025 SWAMY PALAKURI. All rights reserved.</footer>
+
+</body>
+</html>
